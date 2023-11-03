@@ -1,0 +1,35 @@
+/* Generals */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Container */
+body > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#fotoContainer{
+    height: 300px;
+    width: 50%;
+    background-color: red;
+}
+
+#btnContainer{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    width: 50%;
+}
+
+#fotoContainer > img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.disNon{
+    display: none;
+}
