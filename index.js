@@ -13,7 +13,11 @@ for(let i=0; i<percorsiImg.length; i++){
 let index = 0;
 let avanti = document.getElementById("avanti");
 avanti.addEventListener("click", function(){
-    if(index<(immagini.length-1)){
+    if(index==(immagini.length-1)){
+        immagini[index].classList.add("disNon");
+        index = 0;
+        immagini[index].classList.remove("disNon");
+    }else{
         immagini[index].classList.add("disNon");
         index++;
         immagini[index].classList.remove("disNon");
@@ -21,7 +25,11 @@ avanti.addEventListener("click", function(){
 })
 let indietro = document.getElementById("indietro");
 indietro.addEventListener("click", function(){
-    if(index!=0){
+    if(index==0){
+        immagini[index].classList.add("disNon");
+        index = (immagini.length-1);
+        immagini[index].classList.remove("disNon");
+    }else{
         immagini[index].classList.add("disNon");
         index--;
         immagini[index].classList.remove("disNon");
