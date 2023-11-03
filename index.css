@@ -33,3 +33,17 @@ body > div{
 .disNon{
     display: none;
 }
+/* Mini Foto Container */
+#miniFotoContainer{
+    width: 50%;
+    height: 50px;
+    background-color: black;
+    margin-top: 1rem;
+    display: flex;
+}
+
+#miniFotoContainer > img{
+    height: 100%;
+    width: calc(100% / 5);
+    object-fit: cover;
+}
